@@ -18,7 +18,7 @@ export default function Home() {
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/bootstrap.min.css" rel="stylesheet" />  
       </Head>
-        
+      <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
 
       <nav className="sb-topnav navbar navbar-expand navbar-dark bg-dark">
         <a className="navbar-brand ps-3" href="index.html">
