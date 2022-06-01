@@ -1,5 +1,5 @@
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {NavDropdown} from "react-bootstrap";
+
 const Navbar = () => {
     const sidebarToggle = () => {
         document.body.classList.toggle('sb-sidenav-toggled');
@@ -19,8 +19,9 @@ const Navbar = () => {
                     <div className="input-group">
                         <input className="form-control" type="text" placeholder="Search for..." aria-label="Search for..."
                                aria-describedby="btnNavbarSearch"/>
-                        <button className="btn btn-primary" id="btnNavbarSearch" type="button"><i
-                            className="fas fa-search"></i></button>
+                        <button className="btn btn-primary" id="btnNavbarSearch" type="button">
+                            <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" />
+                        </button>
                     </div>
                 </form>
                 {/* Navbar */}
