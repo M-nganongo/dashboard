@@ -20,7 +20,22 @@ const Table =  () =>{
                                             <th>Salary</th>
                                         </tr>
                                     </thead>
-                                    <tfoot>
+                                    <label>
+                                            <select class="dataTable-selector">
+                                                <option value="5">5</option>
+                                                <option value="10">10</option>
+                                                <option value="15">15</option>
+                                                <option value="20">20</option>
+                                                <option value="25">25</option>
+                                            </select>
+                                             entries per page
+                                        </label>
+
+                                        {/* <div class="dataTable-search">
+                                            <input class="dataTable-input " placeholder="Search.." type="text">
+                                        </div> */}
+
+                                    {/* <tfoot>
                                         <tr>
                                             <th>Name</th>
                                             <th>Position</th>
@@ -29,8 +44,16 @@ const Table =  () =>{
                                             <th>Start date</th>
                                             <th>Salary</th>
                                         </tr>
-                                    </tfoot>
+                                    </tfoot> */}
                                     <tbody>
+                                        
+                                        
+                                        <div class="dataTable-bottom">
+                                            <div class="dataTable-info">Showing 1 to 10 of 57 entries</div>
+                                            <nav class="dataTable-pagination">
+
+                                            </nav>
+                                        </div>
                                         <tr>
                                             <td>Tiger Nixon</td>
                                             <td>System Architect</td>
@@ -491,7 +514,13 @@ const Table =  () =>{
                                 </table>
                             </div>
                         </div>
+
+                        {/* <script src="js/scripts.js"></script>
+                        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+                        <script src="js/datatable-simple-demo.js"></script> */}
                     </div>
+
+                    
         
     )
 }
