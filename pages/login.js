@@ -1,6 +1,6 @@
 const login = () =>{
     return(
-        <div classNameName="bg-primary">
+        <div className="bg-primary">
             <div id="layoutAuthentication">
             <div id="layoutAuthentication_content">
                 <main>
