@@ -26,38 +26,60 @@ function Charts() {
   const [areaChartData, setAreaChartData] = useState(null)
 
   return (
-    <div>
-      <h1>Charts Page</h1>
-      <Pie data={pieChartData} />
-      <Bar data={barChartData} options={{
-    scales: {
-      xAxes: [{
-        time: {
-          unit: 'month'
-        },
-        gridLines: {
-          display: false
-        },
-        ticks: {
-          maxTicksLimit: 6
-        }
-      }],
-      yAxes: [{
-        ticks: {
-          min: 0,
-          max: 15000,
-          maxTicksLimit: 5
-        },
-        gridLines: {
-          display: true
-        }
-      }],
-    },
-    legend: {
-      display: false
-    }
-  }}/>
-    </div>
+  
+      <div class="row">
+    
+           {/* <h1>Charts Page</h1> */}
+             <div class="col-lg-6">
+        
+                  <div class="card mb-4">
+                  <div class="card-header">
+                  <i class="fas fa-chart-bar me-1"></i>
+                      Bar Chart Example
+              </div>
+          <div class="card-body" width="100%" height="50%"><Bar data={barChartData} options={{
+            scales: {
+            xAxes: [{
+            time: {
+            unit: 'month'
+            },
+            gridLines: {
+            display: false
+            },
+            ticks: {
+            maxTicksLimit: 6
+            }
+           }],
+              yAxes: [{
+              ticks: {
+              min: 0,
+              max: 15000,
+              maxTicksLimit: 5
+           },
+              gridLines: {
+              display: true
+             }
+            }],
+               },
+              legend: {
+                       display: false
+                }
+                 }}/></div>
+                <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+                </div>
+               </div> 
+
+               <div class="col-lg-6">
+            <div class="card mb-4">
+                <div class="card-header">
+                  <i class="fas fa-chart-pie me-1"></i>
+                      Pie Chart Example
+                </div>
+                  <div class="card-body" width="100%" height="50%"><Pie data={pieChartData} /></div>
+                    <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+            </div>
+        </div>
+        </div>
   );
 }
 
