@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import Link from "next/link";
 
 const error1 = () =>{
     return(
@@ -13,10 +15,12 @@ const error1 = () =>{
                                     <h1 className="display-1">401</h1>
                                     <p className="lead">Unauthorized</p>
                                     <p>Access to this resource is denied.</p>
-                                    <a href="index.html">
-                                        <i className="fas fa-arrow-left me-1"></i>
-                                        Return to Dashboard
-                                    </a>
+                                    <Link href="/">
+                                        <a>
+                                            <FontAwesomeIcon className="me-1" icon="fa-solid fa-arrow-left" />
+                                            Return to Dashboard
+                                        </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

@@ -1,4 +1,5 @@
-import Head from 'next/head'
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import Link from "next/link";
 
 const error3 = () =>{
     return(
@@ -12,10 +13,12 @@ const error3 = () =>{
                                 <div className="text-center mt-4">
                                     <h1 className="display-1">500</h1>
                                     <p className="lead">Internal Server Error</p>
-                                    <a href="index.html">
-                                        <i className="fas fa-arrow-left me-1"></i>
-                                        Return to Dashboard
-                                    </a>
+                                    <Link href="/">
+                                        <a>
+                                            <FontAwesomeIcon className="me-1" icon="fa-solid fa-arrow-left" />
+                                            Return to Dashboard
+                                        </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
